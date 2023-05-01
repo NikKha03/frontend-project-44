@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import parity from '../games/parity.js';
+import calc from '../games/calc.js';
 
 console.log('Welcome to the Brain Games!');
-console.log(parity());
+console.log(calc());
