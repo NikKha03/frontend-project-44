@@ -5,7 +5,7 @@ const start = 'What is the result of the expression?';
 
 // prettier-ignore
 const question = (numRandom1, numRandom2, sign) => `Question: ${numRandom1} ${sign} ${numRandom2}`;
-const deductions = (numRandom1, numRandom2, sign) => {
+const mainFunction = (numRandom1, numRandom2, sign) => {
   let trueAnswer;
   if (sign === mathSigns()[0]) {
     trueAnswer = numRandom1 - numRandom2;
@@ -17,6 +17,6 @@ const deductions = (numRandom1, numRandom2, sign) => {
   return trueAnswer;
 };
 
-const calc = () => index(start, question, deductions);
+const calc = () => index(start, question, mainFunction);
 
 export default calc;

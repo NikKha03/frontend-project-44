@@ -3,9 +3,7 @@ import { countRandom } from '../src/my-function.js';
 
 const start = 'What number is missing in the progression?';
 
-// const firstNum = countRandom(10);
-// const plusNum = countRandom(10);
-const arrClon = [];
+const arrRndClon = [];
 
 const question = (firstNum, plusNum) => {
   const arr = [];
@@ -14,17 +12,17 @@ const question = (firstNum, plusNum) => {
     arr[id] = arr[id - 1] + Math.floor(plusNum / 3);
   }
   const rnd = countRandom(9);
-  arrClon[0] = arr[rnd];
+  arrRndClon[0] = arr[rnd];
   arr[rnd] = '..';
 
   return `Question: ${arr.join(' ')}`;
 };
 
-const deductions = () => {
-  const trueAnswer = arrClon[0];
+const mainFunction = () => {
+  const trueAnswer = arrRndClon[0];
   return trueAnswer;
 };
 
-const progression = () => index(start, question, deductions);
+const progression = () => index(start, question, mainFunction);
 
 export default progression;

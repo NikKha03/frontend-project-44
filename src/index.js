@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 import { countRandom, mathSignRandom } from './my-function.js';
 
-const index = (start, question, deductions) => {
+const index = (start, question, mainFunction) => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
@@ -16,7 +16,7 @@ const index = (start, question, deductions) => {
     const userAnswer = readlineSync.question('Your answer: ');
 
     // prettier-ignore
-    const trueAnswer = String(deductions(numRandom1, numRandom2, sign));
+    const trueAnswer = String(mainFunction(numRandom1, numRandom2, sign));
     if (trueAnswer === userAnswer) {
       console.log('Correct!');
     } else {

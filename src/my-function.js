@@ -4,7 +4,6 @@ const countRandom = (maxNum) => {
 };
 
 const mathSigns = () => ['-', '+', '*'];
-
 const mathSignRandom = () => {
   const sign = mathSigns()[Math.floor(Math.random() * 3)];
   return sign;

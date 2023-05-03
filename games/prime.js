@@ -2,7 +2,7 @@ import index from '../src/index.js';
 
 const start = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const isprime = (num) => {
+const isPrime = (num) => {
   if (num <= 1) {
     return false;
   }
@@ -13,7 +13,7 @@ const isprime = (num) => {
     return false;
   }
 
-  for (let i = 3, root = Math.sqrt(num); i <= root; i += 1) {
+  for (let i = 3; i <= Math.sqrt(num); i += 1) {
     if (num % i === 0) {
       return false;
     }
@@ -23,9 +23,9 @@ const isprime = (num) => {
 };
 
 const question = (numRandom1) => `Question: ${numRandom1}`;
-const deductions = (numRandom1) => {
+const mainFunction = (numRandom1) => {
   let trueAnswer;
-  if (isprime(numRandom1) === true) {
+  if (isPrime(numRandom1) === true) {
     trueAnswer = 'yes';
   } else {
     trueAnswer = 'no';
@@ -33,6 +33,6 @@ const deductions = (numRandom1) => {
   return trueAnswer;
 };
 
-const prime = () => index(start, question, deductions);
+const prime = () => index(start, question, mainFunction);
 
 export default prime;

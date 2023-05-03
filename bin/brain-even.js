@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import parity from '../games/parity.js';
+import even from '../games/even.js';
 
-console.log(parity());
+console.log(even());
