@@ -9,3 +9,5 @@ asciinema brain-even: https://asciinema.org/a/05LX1l7T5PLtiOXZFKPV3OV6n
 asciinema brain-calc: https://asciinema.org/a/581887
 
 asciinema brain-gcd: https://asciinema.org/a/581896
+
+asciinema brain-progression: https://asciinema.org/a/582252
