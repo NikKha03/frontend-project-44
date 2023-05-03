@@ -1,16 +1,17 @@
 import index from '../src/index.js';
+import { mathSigns } from '../src/my-function.js';
 
 const start = 'What is the result of the expression?';
 
 // prettier-ignore
-const question = (numRandom1, numRandom2, mathSignRandom) => `Question: ${numRandom1} ${mathSignRandom} ${numRandom2}`;
-const deductions = (numRandom1, numRandom2, mathSignRandom, mathSigns) => {
+const question = (numRandom1, numRandom2, sign) => `Question: ${numRandom1} ${sign} ${numRandom2}`;
+const deductions = (numRandom1, numRandom2, sign) => {
   let trueAnswer;
-  if (mathSignRandom === mathSigns[0]) {
+  if (sign === mathSigns()[0]) {
     trueAnswer = numRandom1 - numRandom2;
-  } else if (mathSignRandom === mathSigns[1]) {
+  } else if (sign === mathSigns()[1]) {
     trueAnswer = numRandom1 + numRandom2;
-  } else if (mathSignRandom === mathSigns[2]) {
+  } else if (sign === mathSigns()[2]) {
     trueAnswer = numRandom1 * numRandom2;
   }
   return trueAnswer;
