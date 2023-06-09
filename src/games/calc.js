@@ -22,12 +22,17 @@ const question = () => {
 
 const answer = () => {
   let trueAnswer;
-  if (sign === mathSigns()[0]) {
-    trueAnswer = numRandom1 - numRandom2;
-  } else if (sign === mathSigns()[1]) {
-    trueAnswer = numRandom1 + numRandom2;
-  } else if (sign === mathSigns()[2]) {
-    trueAnswer = numRandom1 * numRandom2;
+  switch (sign) {
+    case mathSigns()[0]:
+      trueAnswer = numRandom1 - numRandom2;
+      break;
+    case mathSigns()[1]:
+      trueAnswer = numRandom1 + numRandom2;
+      break;
+    case mathSigns()[2]:
+      trueAnswer = numRandom1 * numRandom2;
+      break;
+    default:
   }
   return trueAnswer;
 };
