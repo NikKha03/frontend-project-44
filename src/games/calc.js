@@ -1,5 +1,5 @@
-import index from '../src/index.js';
-import { mathSigns } from '../src/my-function.js';
+import index from '../index.js';
+import { mathSigns } from '../my-function.js';
 
 const start = 'What is the result of the expression?';
 

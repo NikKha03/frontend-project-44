@@ -1,4 +1,4 @@
-import index from '../src/index.js';
+import index from '../index.js';
 
 const start = 'Answer "yes" if the number is even, otherwise answer "no".';
 

@@ -1,5 +1,5 @@
-import index from '../src/index.js';
-import { countRandom } from '../src/my-function.js';
+import index from '../index.js';
+import { countRandom } from '../my-function.js';
 
 const start = 'What number is missing in the progression?';
 

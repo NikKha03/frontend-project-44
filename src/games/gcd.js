@@ -1,4 +1,4 @@
-import index from '../src/index.js';
+import index from '../index.js';
 
 const start = 'Find the greatest common divisor of given numbers.';
 
