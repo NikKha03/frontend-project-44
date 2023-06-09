@@ -1,4 +1,5 @@
 import index from '../index.js';
+import countRandom from '../utils.js';
 
 const start = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
@@ -21,9 +22,13 @@ const isPrime = (num) => {
 
   return true;
 };
+let numRandom1;
 
-const question = (numRandom1) => `Question: ${numRandom1}`;
-const mainFunction = (numRandom1) => {
+const question = () => {
+  numRandom1 = countRandom(100);
+  return `Question: ${numRandom1}`;
+};
+const answer = () => {
   let trueAnswer;
   if (isPrime(numRandom1) === true) {
     trueAnswer = 'yes';
@@ -33,6 +38,6 @@ const mainFunction = (numRandom1) => {
   return trueAnswer;
 };
 
-const prime = () => index(start, question, mainFunction);
+const prime = () => index(start, [question, answer]);
 
 export default prime;

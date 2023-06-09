@@ -1,12 +1,18 @@
 import index from '../index.js';
+import countRandom from '../utils.js';
 
 const start = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-// prettier-ignore
-const question = (numRandom1) => `Question: ${numRandom1}`;
-const mainFunction = (numRandom1) => {
+let numRandom;
+
+const question = () => {
+  numRandom = countRandom(100);
+  return `Question: ${numRandom}`;
+};
+
+const answer = () => {
   let trueAnswer;
-  if (numRandom1 % 2 === 0) {
+  if (numRandom % 2 === 0) {
     trueAnswer = 'yes';
   } else {
     trueAnswer = 'no';
@@ -14,6 +20,6 @@ const mainFunction = (numRandom1) => {
   return trueAnswer;
 };
 
-const even = () => index(start, question, mainFunction);
+const even = () => index(start, [question, answer]);
 
 export default even;
