@@ -22,22 +22,15 @@ const isPrime = (num) => {
 
   return true;
 };
-let numRandom1;
 
-const question = () => {
-  numRandom1 = countRandom(100);
-  return `Question: ${numRandom1}`;
-};
-const answer = () => {
-  let trueAnswer;
-  if (isPrime(numRandom1) === true) {
-    trueAnswer = 'yes';
-  } else {
-    trueAnswer = 'no';
-  }
-  return trueAnswer;
+const getQuestionAndAnswer = () => {
+  const numRandom1 = countRandom(100);
+  const question = `Question: ${numRandom1}`;
+  const answer = isPrime(numRandom1) ? 'yes' : 'no';
+
+  return [question, answer];
 };
 
-const prime = () => index(start, [question, answer]);
+const prime = () => index(start, getQuestionAndAnswer);
 
 export default prime;

@@ -4,12 +4,10 @@ import countRandom from '../utils.js';
 const start = 'What number is missing in the progression?';
 
 const arrRndClon = [];
-let firstNum;
-let plusNum;
 
-const question = () => {
-  firstNum = countRandom(50);
-  plusNum = countRandom(20);
+const creatingProgression = () => {
+  const firstNum = countRandom(50);
+  const plusNum = countRandom(20);
   const arr = [];
   arr[0] = Math.floor(firstNum);
   for (let id = 1; arr.length !== 10; id += 1) {
@@ -19,14 +17,16 @@ const question = () => {
   arrRndClon[0] = arr[rnd];
   arr[rnd] = '..';
 
-  return `Question: ${arr.join(' ')}`;
+  return arr.join(' ');
 };
 
-const answer = () => {
-  const trueAnswer = arrRndClon[0];
-  return trueAnswer;
+const getQuestionAndAnswer = () => {
+  const question = `Question: ${creatingProgression()}`;
+  const answer = arrRndClon[0];
+
+  return [question, answer];
 };
 
-const progression = () => index(start, [question, answer]);
+const progression = () => index(start, getQuestionAndAnswer);
 
 export default progression;

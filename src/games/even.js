@@ -3,23 +3,16 @@ import countRandom from '../utils.js';
 
 const start = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-let numRandom;
+const isEven = (numRandom) => numRandom % 2 === 0;
 
-const question = () => {
-  numRandom = countRandom(100);
-  return `Question: ${numRandom}`;
+const getQuestionAndAnswer = () => {
+  const numRandom = countRandom(100);
+  const question = `Question: ${numRandom}`;
+  const answer = isEven(numRandom) ? 'yes' : 'no';
+
+  return [question, answer];
 };
 
-const answer = () => {
-  let trueAnswer;
-  if (numRandom % 2 === 0) {
-    trueAnswer = 'yes';
-  } else {
-    trueAnswer = 'no';
-  }
-  return trueAnswer;
-};
-
-const even = () => index(start, [question, answer]);
+const even = () => index(start, getQuestionAndAnswer);
 
 export default even;
