@@ -6,25 +6,45 @@
 
 ### Инструкция по скачиванию и установке:
 
-1. git clone git@github.com:NikKha03/frontend-project-44.git
-2. make install
+1. `git clone git@github.com:NikKha03/frontend-project-44.git`
+2. `make install`
 
-#### brain-even:
+### Игра: "Проверка на чётность"
 
-![](https://asciinema.org/a/05LX1l7T5PLtiOXZFKPV3OV6n)
+#### Суть игры в следующем: пользователю показывается случайное число. И ему нужно ответить yes, если число чётное, или no — если нечётное.
 
-#### brain-calc:
+#### Запуск: `make brain-even` или `brain-even`:
 
-![](https://asciinema.org/a/581887)
+[![asciicast](https://asciinema.org/a/580713.svg)](https://asciinema.org/a/580713)
 
-#### brain-gcd:
+### Игра: "Калькулятор"
 
-![](https://asciinema.org/a/581896)
+#### Суть игры в следующем: пользователю показывается случайное математическое выражение, например 35 + 16, которое нужно вычислить и записать правильный ответ.
 
-#### brain-progression:
+#### Запуск: `make brain-calc` или `brain-calc`:
 
-![](https://asciinema.org/a/582252)
+[![asciicast](https://asciinema.org/a/581887.svg)](https://asciinema.org/a/581887)
 
-#### brain-prime:
+### Игра: "НОД"
 
-![](https://asciinema.org/a/582289)
+#### Суть игры в следующем: пользователю показывается два случайных числа, например, 25 50. Пользователь должен вычислить и ввести наибольший общий делитель этих чисел.
+
+#### Запуск: `make brain-gcd` или `brain-gcd`:
+
+[![asciicast](https://asciinema.org/a/581896.svg)](https://asciinema.org/a/581896)
+
+### Игра: "Арифметическая прогрессия"
+
+#### Суть игры в следующем: пользователю показывается ряд чисел, образующий арифметическую прогрессию, заменив любое из чисел двумя точками. Пользователь должен определить это число.
+
+#### Запуск: `make brain-progression` или `brain-progression`:
+
+[![asciicast](https://asciinema.org/a/582252.svg)](https://asciinema.org/a/582252)
+
+### Игра "Простое ли число?"
+
+#### Суть игры в следующем: пользователю показывается случайное чисело. И ему нужно ответить yes, если число простое, или no — если непростое.
+
+#### Запуск: `make brain-prime` или `brain-prime`:
+
+[![asciicast](https://asciinema.org/a/582289.svg)](https://asciinema.org/a/582289)
