@@ -4,12 +4,27 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/4534832b76bd6188dcc2/maintainability)](https://codeclimate.com/github/NikKha03/frontend-project-44/maintainability)
 
-asciinema brain-even: https://asciinema.org/a/05LX1l7T5PLtiOXZFKPV3OV6n
+### Инструкция по скачиванию и установке:
 
-asciinema brain-calc: https://asciinema.org/a/581887
+1. git clone git@github.com:NikKha03/frontend-project-44.git
+2. make install
 
-asciinema brain-gcd: https://asciinema.org/a/581896
+#### brain-even:
 
-asciinema brain-progression: https://asciinema.org/a/582252
+[](https://asciinema.org/a/05LX1l7T5PLtiOXZFKPV3OV6n)
 
-asciinema brain-prime: https://asciinema.org/a/582289
+#### brain-calc:
+
+[](https://asciinema.org/a/581887)
+
+#### brain-gcd:
+
+[](https://asciinema.org/a/581896)
+
+#### brain-progression:
+
+[](https://asciinema.org/a/582252)
+
+#### brain-prime:
+
+[](https://asciinema.org/a/582289)
