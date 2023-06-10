@@ -11,20 +11,20 @@
 
 #### brain-even:
 
-[](https://asciinema.org/a/05LX1l7T5PLtiOXZFKPV3OV6n)
+![](https://asciinema.org/a/05LX1l7T5PLtiOXZFKPV3OV6n)
 
 #### brain-calc:
 
-[](https://asciinema.org/a/581887)
+![](https://asciinema.org/a/581887)
 
 #### brain-gcd:
 
-[](https://asciinema.org/a/581896)
+![](https://asciinema.org/a/581896)
 
 #### brain-progression:
 
-[](https://asciinema.org/a/582252)
+![](https://asciinema.org/a/582252)
 
 #### brain-prime:
 
-[](https://asciinema.org/a/582289)
+![](https://asciinema.org/a/582289)
