@@ -1,7 +1,7 @@
 import index from '../index.js';
 import countRandom from '../utils.js';
 
-const start = 'What is the result of the expression?';
+const description = 'What is the result of the expression?';
 
 const mathSigns = ['-', '+', '*'];
 const mathSignRandom = () => {
@@ -36,6 +36,6 @@ const getQuestionAndAnswer = () => {
   return [question, answer];
 };
 
-const calc = () => index(start, getQuestionAndAnswer);
+const calc = () => index(description, getQuestionAndAnswer);
 
 export default calc;

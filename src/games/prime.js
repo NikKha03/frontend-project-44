@@ -1,7 +1,8 @@
 import index from '../index.js';
 import countRandom from '../utils.js';
 
-const start = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+// prettier-ignore
+const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (num) => {
   if (num <= 1) {
@@ -31,6 +32,6 @@ const getQuestionAndAnswer = () => {
   return [question, answer];
 };
 
-const prime = () => index(start, getQuestionAndAnswer);
+const prime = () => index(description, getQuestionAndAnswer);
 
 export default prime;

@@ -8,7 +8,7 @@ const index = (description, get) => {
   console.log(`Hello, ${name}!`);
   console.log(description);
 
-  for (let count = 0; count !== roundCounts; count += 1) {
+  for (let count = 0; count < roundCounts; count += 1) {
     const [question, answer] = get();
 
     console.log(question);

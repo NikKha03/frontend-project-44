@@ -1,32 +1,30 @@
 import index from '../index.js';
 import countRandom from '../utils.js';
 
-const start = 'What number is missing in the progression?';
+const description = 'What number is missing in the progression?';
 
-const arrRndClon = [];
-
-const creatingProgression = () => {
-  const firstNum = countRandom(50);
-  const plusNum = countRandom(20);
-  const arr = [];
-  arr[0] = Math.floor(firstNum);
-  for (let id = 1; arr.length !== 10; id += 1) {
-    arr[id] = arr[id - 1] + Math.floor(plusNum);
+const getProgression = (startNum, step) => {
+  const progression = [];
+  const progressionLength = 10;
+  for (let i = 0; i < progressionLength; i += 1) {
+    progression.push(startNum + step * i);
   }
-  const rnd = countRandom(9);
-  arrRndClon[0] = arr[rnd];
-  arr[rnd] = '..';
-
-  return arr.join(' ');
+  return progression;
 };
 
 const getQuestionAndAnswer = () => {
-  const question = `Question: ${creatingProgression()}`;
-  const answer = arrRndClon[0];
+  const startNum = countRandom(50);
+  const step = countRandom(20);
+  const progression = getProgression(startNum, step);
+  const randomIndex = countRandom(9);
+
+  const answer = String(progression[randomIndex]);
+  progression[randomIndex] = '..';
+  const question = `Question: ${progression.join(' ')}`;
 
   return [question, answer];
 };
 
-const progression = () => index(start, getQuestionAndAnswer);
+const progression = () => index(description, getQuestionAndAnswer);
 
 export default progression;

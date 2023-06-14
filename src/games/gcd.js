@@ -1,7 +1,7 @@
 import index from '../index.js';
 import countRandom from '../utils.js';
 
-const start = 'Find the greatest common divisor of given numbers.';
+const description = 'Find the greatest common divisor of given numbers.';
 
 const findGcd = (numRandom1, numRandom2) => {
   let num1 = numRandom1;
@@ -25,6 +25,6 @@ const getQuestionAndAnswer = () => {
   return [question, answer];
 };
 
-const gcd = () => index(start, getQuestionAndAnswer);
+const gcd = () => index(description, getQuestionAndAnswer);
 
 export default gcd;
