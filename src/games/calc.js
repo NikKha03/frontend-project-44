@@ -12,13 +12,13 @@ const mathSignRandom = () => {
 const calculate = (sign, numRandom1, numRandom2) => {
   let result;
   switch (sign) {
-    case mathSigns[0]:
+    case '-':
       result = numRandom1 - numRandom2;
       break;
-    case mathSigns[1]:
+    case '+':
       result = numRandom1 + numRandom2;
       break;
-    case mathSigns[2]:
+    case '*':
       result = numRandom1 * numRandom2;
       break;
     default:
